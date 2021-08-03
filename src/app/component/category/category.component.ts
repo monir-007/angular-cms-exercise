@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {PRODUCTS} from "../../mock-products";
 
 @Component({
   selector: 'app-category',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryComponent implements OnInit {
 
-  constructor() { }
+  categories = PRODUCTS;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

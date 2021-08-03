@@ -1,0 +1,42 @@
+<div class="wrapper">
+<app-side-menu></app-side-menu>
+  <div class="section">
+    <h3 class="text-center m-5">Welcome to Category Page</h3>
+    <div class="row">
+      <a href="">
+        <button type="button" class="btn btn-success p-2 mb-2" style="float: right; margin-right: 170px;"><span><i
+          class="fa fa-plus-circle"></i></span> Add
+          New Category
+        </button>
+      </a>
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+        <div class="table-responsive">
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Category</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let category of categories">
+              <td>{{category.id}}</td>
+              <td>{{category.category}}</td>
+
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>

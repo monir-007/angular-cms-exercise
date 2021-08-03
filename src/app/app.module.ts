@@ -1,12 +1,19 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {ReactiveFormsModule} from "@angular/forms";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProductComponent } from './product/product.component';
-import { CategoryComponent } from './category/category.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {SignInComponent} from './component/sign-in/sign-in.component';
+import {DashboardComponent} from './component/dashboard/dashboard.component';
+import {ProductComponent} from './component/product/product.component';
+import {CategoryComponent} from './component/category/category.component';
+import {SideMenuComponent} from './component/side-menu/side-menu.component';
+import {StocksComponent} from './component/stocks/stocks.component';
+import {ReportsComponent} from './component/reports/reports.component';
+import {FormsModule} from "@angular/forms";
+import {SignUpComponent} from './component/sign-up/sign-up.component';
+
 
 @NgModule({
   declarations: [
@@ -14,13 +21,20 @@ import { CategoryComponent } from './category/category.component';
     SignInComponent,
     DashboardComponent,
     ProductComponent,
-    CategoryComponent
+    CategoryComponent,
+    SideMenuComponent,
+    StocksComponent,
+    ReportsComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

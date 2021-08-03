@@ -1,18 +1,21 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {SignInComponent} from './component/sign-in/sign-in.component';
-import {DashboardComponent} from './component/dashboard/dashboard.component';
-import {ProductComponent} from './component/product/product.component';
-import {CategoryComponent} from './component/category/category.component';
-import {SideMenuComponent} from './component/side-menu/side-menu.component';
-import {StocksComponent} from './component/stocks/stocks.component';
-import {ReportsComponent} from './component/reports/reports.component';
-import {FormsModule} from "@angular/forms";
-import {SignUpComponent} from './component/sign-up/sign-up.component';
+import {SignInComponent} from './components/sign-in/sign-in.component';
+import {DashboardComponent} from './components/dashboard/dashboard.component';
+import {ProductComponent} from './components/product/product.component';
+import {CategoryComponent} from './components/category/category.component';
+import {SideMenuComponent} from './components/side-menu/side-menu.component';
+import {StocksComponent} from './components/stocks/stocks.component';
+import {ReportsComponent} from './components/reports/reports.component';
+import {SignUpComponent} from './components/sign-up/sign-up.component';
+import {ProductCreateComponent} from './components/product-create/product-create.component';
+import {ProductDetailsComponent} from './components/product-details/product-details.component';
 
 
 @NgModule({
@@ -25,13 +28,16 @@ import {SignUpComponent} from './component/sign-up/sign-up.component';
     SideMenuComponent,
     StocksComponent,
     ReportsComponent,
-    SignUpComponent
+    SignUpComponent,
+    ProductCreateComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
